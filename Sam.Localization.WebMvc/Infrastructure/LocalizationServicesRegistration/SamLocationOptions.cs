@@ -1,4 +1,4 @@
-﻿namespace Sam.WebUI.Infrastructure.LocalizationServicesRegistration
+﻿namespace Sam.Localization.WebMvc.Infrastructure.LocalizationServicesRegistration
 {
     public class SamLocationOptions
     {

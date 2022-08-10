@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Sam.WebUI.Infrastructure.LocalizationServicesRegistration;
+using Sam.Localization.WebMvc.Infrastructure.LocalizationServicesRegistration;
 
-namespace Sam.WebUI
+namespace Sam.Localization.WebMvc
 {
     public class Startup
     {
@@ -23,8 +23,8 @@ namespace Sam.WebUI
                 .AddSamLocalization(p =>
                 {
                     p.ResourcesPath = "Resources";
-                    p.SupportedCultures = new[] { "en-US", "fa-IR", "ku" };
-                    p.DefaultRequestCulture = "fa-IR";
+                    p.SupportedCultures = new[] { "en", "fa", "ku" };
+                    p.DefaultRequestCulture = "fa";
                 });
         }
 

@@ -5,32 +5,28 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Resources\Views.Home.Index.fa-IR.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Resources\Views.Home.Index.fa-IR.resx">
+    <EmbeddedResource Update="Resources\Controllers\HomeController.fa.resx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Resources\Views\Home\Index.fa-IR.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Controllers\HomeController.ku.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\Index.fa.resx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Views\Home\Index.ku.resx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Shared\_Layout.fa.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Views\Shared\_Layout.ku.resx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Views\Shared\_Layout.fa-IR.resx">
+    <EmbeddedResource Update="Resources\Views\Shared\_SelectLanguagePartial.fa.resx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Views\Shared\_SelectLanguagePartial.ku.resx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Views\Shared\_SelectLanguagePartial.fa-IR.resx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

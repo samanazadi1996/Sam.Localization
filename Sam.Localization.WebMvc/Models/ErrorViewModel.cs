@@ -1,6 +1,6 @@
 using System;
 
-namespace Sam.WebUI.Models
+namespace Sam.Localization.WebMvc.Models
 {
     public class ErrorViewModel
     {

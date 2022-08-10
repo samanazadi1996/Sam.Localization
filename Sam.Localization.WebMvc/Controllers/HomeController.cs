@@ -1,27 +1,28 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
-using Sam.WebUI.Models;
+using Sam.Localization.WebMvc.Models;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Sam.WebUI.Controllers
+namespace Sam.Localization.WebMvc.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IStringLocalizer<HomeController> localizer;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IStringLocalizer<HomeController> localizer)
         {
             _logger = logger;
+            this.localizer = localizer;
         }
 
         public IActionResult Index()
         {
+            ViewBag.MultiLanguageWebsite = localizer["Multi Language Website"];
             return View();
         }
 

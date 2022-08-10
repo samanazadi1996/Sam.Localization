@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Sam.WebUI
+namespace Sam.Localization.WebMvc
 {
     public class Program
     {

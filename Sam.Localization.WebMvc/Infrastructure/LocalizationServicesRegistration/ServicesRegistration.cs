@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace Sam.WebUI.Infrastructure.LocalizationServicesRegistration
+namespace Sam.Localization.WebMvc.Infrastructure.LocalizationServicesRegistration
 {
     public static class LocalizationServicRegistration
     {
