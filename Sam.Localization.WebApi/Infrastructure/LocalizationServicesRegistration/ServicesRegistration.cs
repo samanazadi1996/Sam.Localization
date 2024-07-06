@@ -4,11 +4,10 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace Sam.Localization.SwaggerUI.Infrastructure.LocalizationServicesRegistration
+namespace Sam.Localization.WebApi.Infrastructure.LocalizationServicesRegistration
 {
     public static class LocalizationServicRegistration
     {

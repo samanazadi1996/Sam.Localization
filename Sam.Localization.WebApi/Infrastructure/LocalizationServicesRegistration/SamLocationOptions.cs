@@ -1,4 +1,4 @@
-﻿namespace Sam.Localization.SwaggerUI.Infrastructure.LocalizationServicesRegistration
+﻿namespace Sam.Localization.WebApi.Infrastructure.LocalizationServicesRegistration
 {
     public class SamLocationOptions
     {

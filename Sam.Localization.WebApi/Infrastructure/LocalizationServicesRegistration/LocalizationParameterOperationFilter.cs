@@ -2,7 +2,7 @@
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Collections.Generic;
 
-namespace Sam.Localization.SwaggerUI.Infrastructure.LocalizationServicesRegistration
+namespace Sam.Localization.WebApi.Infrastructure.LocalizationServicesRegistration
 {
     public class LocalizationParameterOperationFilter : IOperationFilter
     {

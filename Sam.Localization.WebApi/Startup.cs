@@ -4,9 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Sam.Localization.SwaggerUI.Infrastructure.LocalizationServicesRegistration;
+using Sam.Localization.WebApi.Infrastructure.LocalizationServicesRegistration;
 
-namespace Sam.Localization.SwaggerUI
+namespace Sam.Localization.WebApi
 {
     public class Startup
     {
@@ -32,7 +32,7 @@ namespace Sam.Localization.SwaggerUI
             services.AddSwaggerGen(c =>
             {
                 c.AddSamLocalization();
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sam.Localization.SwaggerUI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sam.Localization.WebApi", Version = "v1" });
             });
         }
 
@@ -43,7 +43,7 @@ namespace Sam.Localization.SwaggerUI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sam.Localization.SwaggerUI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sam.Localization.WebApi v1"));
             }
 
             app.UseHttpsRedirection();

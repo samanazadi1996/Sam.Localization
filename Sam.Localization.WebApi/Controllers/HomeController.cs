@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
-namespace Sam.Localization.SwaggerUI.Controllers
+namespace Sam.Localization.WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
